@@ -51,19 +51,19 @@ int live_y;
 int type;
 int block;
 
-// Game over sad face
-byte sf[8]= {B00111100,B01000010,B10100101,B10000001,B10011001,B10100101,B01000010,B00111100};
+// Game over lose face
+byte lose_face[8]= {B00111100,B01000010,B10100101,B10000001,B10011001,B10100101,B01000010,B00111100};
 
 void gameover(){
-  // Display sad face
-  tetris.setColumn(0,7,sf[0]);
-  tetris.setColumn(0,6,sf[1]);
-  tetris.setColumn(0,5,sf[2]);
-  tetris.setColumn(0,4,sf[3]);
-  tetris.setColumn(0,3,sf[4]);
-  tetris.setColumn(0,2,sf[5]);
-  tetris.setColumn(0,1,sf[6]);
-  tetris.setColumn(0,0,sf[7]);
+  // Display lose face
+  tetris.setColumn(0,7,lose_face[0]);
+  tetris.setColumn(0,6,lose_face[1]);
+  tetris.setColumn(0,5,lose_face[2]);
+  tetris.setColumn(0,4,lose_face[3]);
+  tetris.setColumn(0,3,lose_face[4]);
+  tetris.setColumn(0,2,lose_face[5]);
+  tetris.setColumn(0,1,lose_face[6]);
+  tetris.setColumn(0,0,lose_face[7]);
 }
 
 void setup() {
